@@ -1,8 +1,27 @@
+#nestedFlexBox{
+  display: flex;
+  flex direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border: 3px solid black;
+}
+
+.oldPost {
+  width:250px;
+  height: 200px;
+  border:2px solid green;
+  border-radius:20px;
+  padding: 10px;
+  margin: 25px 50px 25px 50px;
+  background: #F9FA4D;
+}
+
+
 .container{
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 100px 300px 300px 300px 300px 100px;
-  border: 2px solid yellow;
+  border: 2px solid blue;
   grid-template-areas:
   "hd"
   "photo"
