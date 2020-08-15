@@ -1,13 +1,13 @@
 h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
-  color: #696969;
+  color: #00CED1;
 }
 
 h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  color: #696969;
+  color: #4682B4;
 }
 
 h3 {
@@ -24,7 +24,7 @@ a {
 }
 
 p {
-  color: black;
+  color: #708090;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
@@ -57,7 +57,7 @@ blockquote p {
   grid-area: hd;
   position: fixed;
   width: 100%;
-  height: 110px;
+  height: 80px;
   background-color: white;
   box-shadow: 0px 5px 5px grey;
     }
@@ -108,19 +108,19 @@ blockquote p {
   .blog{
     grid-area: main;
     padding: 50px 50px 50px 50px;
-    background-color: solid blue;
   }
-
 
   .hoverImage:hover {
     box-shadow: 0px 0px 15px black;
-
   }
 
   .footer{
     grid-area: ft;
+    width: 100%;
+    height: 80px;
     background-color: #F5F5F5;
   }
+
   .socialMedia{
     display: flex;
     flex-direction: row;
