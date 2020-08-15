@@ -1,0 +1,146 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #696969;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #696969;
+}
+
+h3 {
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  font-variant: small-caps;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a {
+    text-decoration:none;
+}
+
+p {
+  color: black;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  text-decoration: none;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80px auto 80px;
+  border: 2px solid blue;
+  grid-template-areas:
+  "hd"
+  "main"
+  "ft";
+  }
+
+.box{
+  border: 1px solid red;
+  }
+
+.header{
+  grid-area: hd;
+  position: fixed;
+  width: 100%;
+  height: 110px;
+  background-color: white;
+  box-shadow: 0px 5px 5px grey;
+    }
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.navLinks {
+      display: flex;
+      flex-direction: row;
+
+    }
+
+    .logo {
+      /* border: 1px solid red; */
+      justify-content: left;
+      margin-left: 10px;
+    }
+
+    .item {
+      overflow: hidden;
+      /* border: 1px solid red; */
+    }
+      /* Style the links inside the menu bar */
+    .item a {
+      float: left;
+      color: #696969;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      padding: 20px 80px;
+      text-decoration: none;
+      font-size: 20px;
+      border-radius:25px;
+    }
+
+    .item a:hover {
+      color: black;
+    }
+
+    .item a.active {
+      background-color: #2F4F4F;
+      color: white;
+    }
+
+  .blog{
+    grid-area: main;
+    padding: 50px 50px 50px 50px;
+    background-color: solid blue;
+  }
+
+
+  .hoverImage:hover {
+    box-shadow: 0px 0px 15px black;
+
+  }
+
+  .footer{
+    grid-area: ft;
+    background-color: #F5F5F5;
+  }
+  .socialMedia{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-right: 20px;
+  }
+
+  #facebook {
+    width:50px;
+    height: 50px;
+    border-radius:50px;
+    margin: 15px 10px 15px 10px;
+    background-image: url('facebook-logo.png');
+    background-size: cover;
+  }
+  #insta {
+    width:50px;
+    height: 50px;
+    border-radius:50px;
+    margin: 15px 10px 15px 10px;
+    background-image: url('insta-logo.jpg');
+    background-size: cover;
+  }
