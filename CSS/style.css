@@ -1,26 +1,31 @@
-#nestedFlexBox{
-  display: flex;
-  flex direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  border: 3px solid black;
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #696969;
 }
 
-.oldPost {
-  width:250px;
-  height: 200px;
-  border:2px solid green;
-  border-radius:20px;
-  padding: 10px;
-  margin: 25px 50px 25px 50px;
-  background: #F9FA4D;
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #696969;
 }
 
+a {
+    text-decoration:none;
+}
+
+p {
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  font-variant: small-caps;
+  font-size: 20px;
+  text-decoration: none;
+}
 
 .container{
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 100px 300px 300px 300px 300px 100px;
+  grid-template-rows: 80px 600px 600px 600px auto 80px;
   border: 2px solid blue;
   grid-template-areas:
   "hd"
@@ -32,34 +37,225 @@
   }
 
 .box{
-  border: 1px solid red;
-  background: #F8FA9D;
+  /* border: 1px solid red; */
   }
 
   .header{
     grid-area: hd;
-  }
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 5px 5px grey;
+    }
+    .menu{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+
+    .navLinks {
+      display: flex;
+      flex-direction: row;
+
+    }
+
+    .logo {
+      /* border: 1px solid red; */
+      justify-content: left;
+    }
+
+    .item {
+      overflow: hidden;
+      /* border: 1px solid red; */
+    }
+      /* Style the links inside the menu bar */
+    .item a {
+      float: left;
+      color: #696969;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      padding: 20px 80px;
+      text-decoration: none;
+      font-size: 20px;
+      border-radius:25px;
+    }
+
+    .item a:hover {
+      color: black;
+    }
+
+    .item a.active {
+      background-color: #2F4F4F;
+      color: white;
+    }
+
   .photo{
     grid-area: photo;
+    background-image: url("https://i.picsum.photos/id/1011/5472/3648.jpg?hmac=Koo9845x2akkVzVFX3xxAc9BCkeGYA9VRVfLE4f0Zzk");
+    background-size: cover;
   }
-  .recent{
+  .latest{
     grid-area: main;
+
   }
+  .blog{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0px 50px 0px;
+    box-shadow: 4px 7px 29px 0px rgba(69,69,69,0.3);
+  ;
+  }
+  .latestImg{
+    height: 100%;
+    width: 50%;
+    background: url('https://images.unsplash.com/photo-1506260408121-e353d10b87c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2600&q=80') no-repeat center center;
+    background-size: cover;
+  }
+  .postName {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
   .sidebar{
     grid-area: sd;
+
+  }
+  .aboutMeContainer{
+    width: 100%;
+    height: 400px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 3px solid black; */
+  }
+  .myPhoto {
+    width:200px;
+    height: 200px;
+    border-radius:200px;
+    margin: 50px 50px 25px 50px;
+    /* border: 3px solid green; */
+    background-image: url('myphoto.jpg');
+    background-size: cover;
+  }
+  .aboutMe {
+    width:80%;
+    height: 100px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    /* margin: 25px 50px 25px 50px; */
+    /* border: 3px solid green; */
+
   }
   .previous{
     grid-area: prev;
-  }
-  .footer{
-    grid-area: ft;
+    text-align: center;
   }
 
-@media(min-width:400px) {
+  #oldPosts{
+    display: flex;
+    flex direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* border: 3px solid black; */
+
+  }
+
+  .hoverImage {
+    width:250px;
+    height: 200px;
+    border-radius:20px;
+    line-height: 160px;
+    text-align: center;
+    margin: 25px 50px 25px 50px;
+
+  }
+  #one {
+    background-image: url('https://i.picsum.photos/id/1002/4312/2868.jpg?hmac=5LlLE-NY9oMnmIQp7ms6IfdvSUQOzP_O3DPMWmyNxwo');
+    background-size: cover;
+  }
+  #two {
+    background-image: url('https://i.picsum.photos/id/1025/4951/3301.jpg?hmac=_aGh5AtoOChip_iaMo8ZvvytfEojcgqbCH7dzaz-H8Y');
+    background-size: cover;
+  }
+  #three {
+    background-image: url('https://i.picsum.photos/id/1004/5616/3744.jpg?hmac=Or7EJnz-ky5bsKa9_frdDcDCR9VhCP8kMnbZV6-WOrY');
+    background-size: cover;
+  }
+  #four {
+    background-image: url('https://i.picsum.photos/id/1056/3988/2720.jpg?hmac=qX6hO_75zxeYI7C-1TOspJ0_bRDbYInBwYeoy_z_h08');
+    background-size: cover;
+  }
+  #five {
+    background-image: url('https://i.picsum.photos/id/101/2621/1747.jpg?hmac=cu15YGotS0gIYdBbR1he5NtBLZAAY6aIY5AbORRAngs');
+    background-size: cover;
+  }
+  #six {
+    background-image: url('https://i.picsum.photos/id/1035/5854/3903.jpg?hmac=DV0AS2MyjW6ddofvSIU9TVjj1kewfh7J3WEOvflY8TM');
+    background-size: cover;
+  }
+
+  .hoverImage .text {
+    visibility:hidden;
+
+  }
+
+  .hoverImage:hover .text {
+    visibility:visible;
+
+  }
+
+  .hoverImage:hover {
+    box-shadow: 0px 0px 15px black;
+
+  }
+
+  .footer{
+    grid-area: ft;
+    background-color: #F5F5F5;
+  }
+  .socialMedia{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    justify-content: center;
+  }
+
+  #facebook {
+    width:50px;
+    height: 50px;
+    border-radius:50px;
+    margin: 15px 10px 15px 10px;
+    background-image: url('https://i.picsum.photos/id/1002/4312/2868.jpg?hmac=5LlLE-NY9oMnmIQp7ms6IfdvSUQOzP_O3DPMWmyNxwo');
+    background-size: cover;
+  }
+  #insta {
+    width:50px;
+    height: 50px;
+    border-radius:50px;
+    margin: 15px 10px 15px 10px;
+    background-image: url('https://i.picsum.photos/id/1002/4312/2868.jpg?hmac=5LlLE-NY9oMnmIQp7ms6IfdvSUQOzP_O3DPMWmyNxwo');
+    background-size: cover;
+  }
+
+@media(min-width:800px) {
 .container{
   display: grid;
   grid-template-columns: 35% 35% 30%;
-  grid-template-rows: 100px 600px 600px 600px 100px;
+  grid-template-rows: 100px 600px 600px 600px 80px;
   grid-template-areas:
   "hd hd hd"
   "photo photo photo"

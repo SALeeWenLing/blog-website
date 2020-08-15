@@ -10,19 +10,83 @@
   <body>
 
     <div class = "container">
-      <div class="header box">Header</div>
-      <div class="photo box">Main Photo</div>
-      <div class="recent box">Recent Entry</div>
-      <div class="sidebar box">Sidebar</div>
-      <div class="previous box">Previous Entries
-        <div id="nestedFlexBox">
-          <div id="one" class="oldPost">Post 1</div>
-          <div id="two" class="oldPost">Post 2</div>
-          <div id="three" class="oldPost">Post 3</div>
-          <div id="four" class="oldPost">Post 4</div>
+      <div class="header box">
+        <nav class="menu">
+          <a href="#home" class="logo">
+            <img src="logo.jpg" alt="Placeholder logo" height=45px width=220px </li>
+          </a>
+          <ul class="navLinks">
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#about">About</a></li>
+            <li class="item"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="photo box"></div>
+      <div class="latest box">
+          <div class="blog">
+            <div class="latestImg"></div>
+            <div class="postName">
+              <h2>Making My First Website</h2>
+              <div class="blogDetails">
+                <p class="author"><span>by</span> Sheryl Lee</p>
+              </div>
+            </div>
         </div>
       </div>
-      <div class="footer box">Footer</div>
+
+
+
+      <div class="sidebar box">
+        <div class="aboutMeContainer">
+          <div class="myPhoto"></div>
+          <div class="aboutMe">@sheryleewl</div>
+        </div>
+      </div>
+      <div class="previous box"><h1>Previous Entries
+        <div id="oldPosts">
+          <a style="display:block" href="#post1">
+            <div id="one" class="hoverImage">
+              <p class="text">Post 1</p>
+            </div>
+          </a>
+          <a style="display:block" href="#post2">
+            <div id="two" class="hoverImage">
+              <p class="text">Post 2</p>
+            </div>
+          </a>
+          <a style="display:block" href="#post3">
+            <div id="three" class="hoverImage">
+              <p class="text">Post 3</p>
+            </div>
+          </a>
+          <a style="display:block" href="#post4">
+            <div id="four" class="hoverImage">
+              <p class="text">Post 4</p>
+            </div>
+          </a>
+          <a style="display:block" href="#post5">
+            <div id="five" class="hoverImage">
+              <p class="text">Post 5</p>
+            </div>
+          </a>
+          <a style="display:block" href="#post6">
+            <div id="six" class="hoverImage">
+              <p class="text">Post 6</p>
+            </div>
+          </a>
+        </div>
+      </h1></div>
+      <div class="footer box">Footer
+        <div class="socialMedia">
+          <a style="display:block" href="#post1">
+            <div id="facebook" class="hoverImage"></div>
+          </a>
+          <a style="display:block" href="#post1">
+            <div id="insta" class="hoverImage"></div>
+          </a>
+
+      </div>
     </div>
 
   </body>
